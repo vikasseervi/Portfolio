@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 15px; 
+}
+
+.nav-connect {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.navbar-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    animation: flickerWithGap 2s infinite; /* Adjust duration to include the gap */
+}
+
+@keyframes flickerWithGap {
+    0%, 18%, 22%, 25%, 53%, 57%, 70%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0;
+    }
+    71%, 100% {
+        opacity: 1; /* Image stays fully opaque during the gap period */
+    }
+}
