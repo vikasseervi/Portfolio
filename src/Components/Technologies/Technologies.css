@@ -1,0 +1,46 @@
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+    margin-top: 100px;
+    gap: 50px; 
+}
+
+.technologies-title {
+    position: relative;
+    height: auto;
+    font-family: outfit;
+    font-weight: bold;
+}
+.technologies-title h1 {
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.technologies-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.technologies-para {
+    font-size: 17px;
+}
+.section {
+    width: 100%;
+}
+.section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #B923E1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}

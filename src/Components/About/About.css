@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+    margin-top: 100px;
+    gap: 50px; 
+}
+
+.about-title {
+    position: relative;
+    height: auto;
+    font-family: outfit;
+    font-weight: bold;
+}
+.about-title h1 {
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.about-para {
+    font-size: 17px;
+}
+
+
+.section {
+    width: 100%;
+}
+.section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #B923E1;
+}
+.section h4 {
+    font-size: 1.2em;
+}
+.item {
+    margin-top: 20px;
+}
+.date {
+    position: absolute;
+    right: 12%;
+    color : #B923E1;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+li {
+    margin-left: 40px;
+    font-size: 17px;
+}
+.skills {
+    color: #B923E1;
+    font: bold;;
+}
