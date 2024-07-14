@@ -18,7 +18,7 @@ import postman from '../../assets/postman.png'
 export default function Technologies() {
     
     return(
-        <div className='technologies'>
+        <div id='technologies' className='technologies'>
             <div className="technologies-title">
                 <h1>Technologies</h1>
                 <img src={theme_pattern} alt="" />

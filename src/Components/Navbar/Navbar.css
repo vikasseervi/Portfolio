@@ -58,3 +58,26 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+.nav-menu li {
+    cursor: pointer;
+    position: relative;
+}
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background: linear-gradient(270deg, #DF8908 10%, #B923E1 100%);
+    transition: width 0.1s ease-in-out;
+}
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}

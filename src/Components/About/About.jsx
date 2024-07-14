@@ -2,9 +2,13 @@ import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 
 export default function About() {
+
+    const infosysSpringBoard = ['Java', 'Data Structures', 'Object-Oriented Programming'];
+    const aws = ['AWS'];
+    const hp = ['Spring Boot', 'Spring MVC', 'REST'];
     
     return(
-        <div className='about'>
+        <div id='about' className='about'>
             <div className="about-title">
                 <h1>About Me</h1>
                 <img src={theme_pattern} alt="" />
@@ -55,17 +59,35 @@ export default function About() {
                 <h2>Certifications</h2>
                 <div className="item">
                     <h4>Infosys SpringBoard Programming using Java</h4>
-                    <li>Key Skills: <span className="skills"> Java, Data Structures, Object-Oriented Programming </span></li>
+                    <li>Key Skills :&nbsp;
+                        {infosysSpringBoard.map((skill, index) => (
+                            <span key={index} className='skill-bg'>
+                                {skill}
+                            </span>
+                        ))}
+                    </li>
                     <li>In the Infosys SpringBoard Programming using Java course, I covered a range of topics related to Java programming language like Java Basics, Object-Oriented Programming (OOP), and Data Structures.</li>
                 </div>
                 <div className="item">
                     <h4>Data Analytics Virtual Internship (AWS Academy)</h4>
-                    <li>Key Skills: <span className="skills"> AWS </span></li>
+                    <li>Key Skills :&nbsp;
+                        {aws.map((skill, index) => (
+                            <span key={index} className='skill-bg'>
+                                {skill}
+                            </span>
+                        ))}
+                    </li>
                     <li>In the AICTE Data Analytics Virtual Internship (AWS Academy), I gained valuable skills and knowledge in data analytics using tools and technologies provided by Amazon Web Services (AWS) like Amazon S3, EC2, etc.</li>
                 </div>
                 <div className="item">
                     <h4>Hewlett Packard Enterprise Software Engineering Job Simulation</h4>
-                    <li>Key Skills: <span className="skills"> Spring Boot, Spring MVC, REST </span></li>
+                    <li>Key Skills :&nbsp;
+                        {hp.map((skill, index) => (
+                            <span key={index} className='skill-bg'>
+                                {skill}
+                            </span>
+                        ))}
+                    </li>
                     <li>Hewlett Packard Enterprise Software Engineering Job Simulation on Forage - March 2024. </li>
                     <li>Wrote a proposal for a RESTful web service to manage a list of employees. </li>
                     <li>Built a web server application in Java Spring Boot that can accept and respond to HTTP requests as well as support uploading JSON data. </li>

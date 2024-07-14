@@ -4,7 +4,7 @@ import profile_img from '../../assets/profile.jpg'
 export default function Hero() {
     
     return(
-        <div className='hero'>
+        <div id='home' className='hero'>
             <div className='container'>
                 <div className='right-half'>
                     <img className='profile-img pic-slide-in' src={profile_img} alt='profile image'></img>

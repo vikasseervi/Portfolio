@@ -1,21 +1,21 @@
 import './Navbar.css'
-// import theme_pattern from '../../assets/theme_pattern.svg'
-
+import { useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 export default function Navbar() {
+
+    const [id, setId] = useState('home'); 
+
     return(
-        <div className='navbar'>
-            {/* <img src={logoW} alt="Logo" className='navbar-logo' /> */}
-            <h1 className='navbar-logo'>Vikas</h1>
-            {/* <h1 className='navbar-logo'>Vikas</h1>
-            <img src={theme_pattern} alt="" /> */}
+        <div id='' className='navbar'>
+            <h1 className='navbar-logo'>Vikas</h1>            
             <ul className="nav-menu">
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Portfolio</li>
-                <li>Social</li>
-                <li>Contact</li>
+                <li> <AnchorLink className='anchor-link' href="#home"> Home </AnchorLink></li>
+                <li> <AnchorLink className='anchor-link' href="#about"> About Me </AnchorLink></li>
+                <li> <AnchorLink className='anchor-link' href="#technologies"> Technologies</AnchorLink></li>
+                <li> <AnchorLink className='anchor-link' href="#projects"> Projects </AnchorLink></li>
+                <li> <AnchorLink className='anchor-link' href="#contact"> Contact </AnchorLink></li>
             </ul>
-            <div className="nav-connect">Connect With Me</div>
+            <div className="nav-connect"> <AnchorLink className='anchor-link' href="#contact"> Connect With Me </AnchorLink></div>
         </div>
     )
 }

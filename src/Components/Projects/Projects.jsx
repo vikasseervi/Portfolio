@@ -1,5 +1,11 @@
 import './Projects.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
+import ezManage_project from '../../assets/ezManage_project.gif'
+import portfolio_project from '../../assets/portfolio_project.gif'
+import ezManage_image from '../../assets/ezManageStaticPic.png'
+import portfolio_image from '../../assets/portfolioStaticPic.png'
+
+import { useState } from 'react'
 
 export default function Projects() {
 
@@ -7,8 +13,13 @@ export default function Projects() {
     const academyMateSkills = ['Java', 'SpringBoot', 'MySQL', 'JPA'];
     const portfolioSkills = ['ReactJS', 'HTML', 'CSS'];
 
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseOver  = () => setIsHovered(true);
+    const handleMouseOut = () => setIsHovered(false);
+   
     return (
-        <div className='projects'>
+        <div id='projects' className='projects'>
             <div className='prjects-title'>
                 <h1>Projects</h1>
                 <img src={theme_pattern} alt="" />
@@ -16,7 +27,9 @@ export default function Projects() {
 
             <div className='project-section'>
                 <div className='project-container'>
-                    <img src="" alt="My GIF" width="auto" height="auto" />
+                    {/* <HoverGIF image={ezManage_image} src={ezManage_project} /> */}
+                    <img src={isHovered ? ezManage_project : ezManage_image} alt="My GIF" width="auto" height="auto" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}/>
+
                     <h2>ezManage</h2>
                     <div className='project-container-techstack'>
                     <p> <h4>Tech Stack :&nbsp;</h4></p>
@@ -32,7 +45,7 @@ export default function Projects() {
                 </div>
                 
                 <div className='project-container'>
-                    <img src="" alt="My GIF" width="auto" height="auto" />
+                    <img src={isHovered ? portfolio_project : portfolio_image} alt="My GIF" width="auto" height="auto" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}/>
                     <h2>Portfolio Website</h2>
                     <div className='project-container-techstack'>
                     <p> <h4>Tech Stack :&nbsp;</h4></p>

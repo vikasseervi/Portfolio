@@ -51,12 +51,15 @@
     transform: scale(1.1);
     border-color: #B923E1;
 }
+.project-container img {
+    border-radius: 10px;
+}
+
 .project-container h2 {
     font-size: 1.8em;
     font-weight: bold;
     text-shadow: 3px 3px 5px #B923E1;
 }
-
 .project-container-links {
     display: flex;
     justify-content: space-between;
@@ -72,7 +75,7 @@
 }
 
 .skill-bg {
-    background-color: #B923E1;
+    background-color: #853c99;
     margin-right: 5px;
     margin-bottom: 5px;
     padding: 2px 5px;
