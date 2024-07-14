@@ -25,7 +25,7 @@ export default function Technologies() {
             </div>
             <div className="section">
                 <h2>Tech Stack</h2>
-                <div className='container'>
+                <div className='technologies-section'>
                     <Card src={java} name={'Java'} />
                     <Card src={spring} name={'Spring Boot'} />
                     <Card src={junit5} name={'Junit5'}/>
@@ -37,7 +37,7 @@ export default function Technologies() {
                 </div>
 
                 <h2>Tools</h2>
-                <div className='container'>
+                <div className='technologies-section'>
                     <Card src={intellijIdea} name={'IntelliJ Idea'} />
                     <Card src={vscode} name={'VS Code'}/>
                     <Card src={git} name={'Git'}/>

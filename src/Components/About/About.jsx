@@ -23,8 +23,10 @@ export default function About() {
                 <h2>Education</h2>
                 <div className="item">
                     <div>
-                        <p className='date'>Nov 2021 - present</p>
-                        <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                        <div className='flex-container'>
+                            <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                            <p className='date'>Nov 2021 - present</p>
+                        </div>
                         <li>CMR Engineering College</li>
                         <li>8.58 CGPA</li>
                         

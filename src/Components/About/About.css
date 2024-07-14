@@ -32,6 +32,8 @@
 
 .section {
     width: 100%;
+    justify-content: center;
+    align-items: left;
 }
 .section h2 {
     font-size: 2em;
@@ -44,10 +46,9 @@
 .item {
     margin-top: 20px;
 }
+
 .date {
-    position: absolute;
-    right: 12%;
-    color : #B923E1;
+    color: #B923E1;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -58,4 +59,10 @@ li {
 .skills {
     color: #B923E1;
     font: bold;;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the h4 and date are spaced apart */
+    align-items: center; /* Align items vertically if needed */
 }
