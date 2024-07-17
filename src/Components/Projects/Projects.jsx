@@ -9,14 +9,14 @@ import { useState } from 'react'
 
 export default function Projects() {
 
-    const exManageSkills = ['Java', 'SpringBoot', 'MySQL', 'API', 'HTML', 'HTML', 'CSS', 'Thymeleaf'];
+    const exManageSkills = ['Java', 'SpringBoot', 'MySQL', 'API', 'HTML', 'CSS', 'Thymeleaf'];
     const academyMateSkills = ['Java', 'SpringBoot', 'MySQL', 'JPA'];
     const portfolioSkills = ['ReactJS', 'HTML', 'CSS'];
 
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState('');
 
-    const handleMouseOver  = () => setIsHovered(true);
-    const handleMouseOut = () => setIsHovered(false);
+    const handleMouseOver  = (project) => setIsHovered(project);
+    const handleMouseOut = () => setIsHovered('');
    
     return (
         <div id='projects' className='projects'>
@@ -26,9 +26,9 @@ export default function Projects() {
             </div>
 
             <div className='project-section'>
-                <div className='project-container'>
+                <div className='project-container' onMouseOver={() => handleMouseOver('ezManage')} onMouseOut={handleMouseOut}>
                     {/* <HoverGIF image={ezManage_image} src={ezManage_project} /> */}
-                    <img src={isHovered ? ezManage_project : ezManage_image} alt="My GIF" width="auto" height="auto" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}/>
+                    <img src={isHovered === 'ezManage' ? ezManage_project : ezManage_image} alt="My GIF" width="auto" height="auto" />
 
                     <h2>ezManage</h2>
                     <div className='project-container-techstack'>
@@ -44,8 +44,8 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div className='project-container'>
-                    <img src={isHovered ? portfolio_project : portfolio_image} alt="My GIF" width="auto" height="auto" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}/>
+                <div className='project-container' onMouseOver={() => handleMouseOver('portfolio')} onMouseOut={handleMouseOut}>
+                    <img src={isHovered === 'portfolio' ? portfolio_project : portfolio_image} alt="My GIF" width="auto" height="auto" />
                     <h2>Portfolio Website</h2>
                     <div className='project-container-techstack'>
                     <p> <h4>Tech Stack :&nbsp;</h4></p>

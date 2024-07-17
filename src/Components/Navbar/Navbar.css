@@ -5,6 +5,23 @@
     margin: 20px 100px;
 }
 
+@keyframes slideDownfromUp {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.navbar-slide-slidedown {
+    animation: slideDownfromUp 2s ease-out forwards;
+    visibility: hidden;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -71,7 +88,7 @@
     width: 0;
     height: 2px; /* Adjust the thickness of the underline */
     background: linear-gradient(270deg, #DF8908 10%, #B923E1 100%);
-    transition: width 0.1s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 .nav-menu li:hover::after {
     width: 100%;

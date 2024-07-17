@@ -6,7 +6,7 @@ export default function Navbar() {
     const [id, setId] = useState('home'); 
 
     return(
-        <div id='' className='navbar'>
+        <div id='' className='navbar navbar-slide-slidedown'>
             <h1 className='navbar-logo'>Vikas</h1>            
             <ul className="nav-menu">
                 <li> <AnchorLink className='anchor-link' href="#home"> Home </AnchorLink></li>

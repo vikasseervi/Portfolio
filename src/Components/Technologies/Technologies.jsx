@@ -28,8 +28,8 @@ export default function Technologies() {
                 <div className='technologies-section'>
                     <Card src={java} name={'Java'} />
                     <Card src={spring} name={'Spring Boot'} />
-                    <Card src={junit5} name={'Junit5'}/>
-                    <Card src={react_js} name={'ReactJs'} />
+                    <Card src={junit5} name={'JUnit5'}/>
+                    <Card src={react_js} name={'ReactJS'} />
                     <Card src={html} name={'HTML'}/>
                     <Card src={css} name={'CSS'}/>
                     <Card src={javascript} name={'JavaScript'}/>
