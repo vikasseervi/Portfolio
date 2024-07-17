@@ -1,7 +1,18 @@
 import './Hero.css'
 import profile_img from '../../assets/profile.jpg'
+import resume from '../../assets/Vikas Resume Latest(for portfolio).pdf'
 
 export default function Hero() {
+
+    const handleDownload = () => {
+        
+        const link = document.createElement('a');
+        link.href = {resume};
+        link.download = 'Vikas Seervi Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
     
     return(
         <div id='home' className='hero'>
@@ -17,7 +28,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className >
-                <div className='text-slide-up hero-resume'> My Resume</div>
+                <div className='text-slide-up hero-resume' onClick={handleDownload}> My Resume</div>
             </div>
         </div>
     )
