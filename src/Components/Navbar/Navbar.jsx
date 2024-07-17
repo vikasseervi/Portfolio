@@ -7,7 +7,7 @@ export default function Navbar() {
 
     return(
         <div id='' className='navbar navbar-slide-slidedown'>
-            <h1 className='navbar-logo'>Vikas</h1>            
+            <h1 className='navbar-logo'>VIKAS</h1>            
             <ul className="nav-menu">
                 <li> <AnchorLink className='anchor-link' href="#home"> Home </AnchorLink></li>
                 <li> <AnchorLink className='anchor-link' href="#about"> About Me </AnchorLink></li>
