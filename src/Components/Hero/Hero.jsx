@@ -7,7 +7,7 @@ export default function Hero() {
     const handleDownload = () => {
         
         const link = document.createElement('a');
-        link.href = {resume};
+        link.href = resume;
         link.download = 'Vikas Seervi Resume.pdf';
         document.body.appendChild(link);
         link.click();
