@@ -143,3 +143,14 @@
 .hero-resume:hover {
     border-color: #B923E1;
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.anchor-link:hover,
+.anchor-link:active,
+.anchor-link:visited {
+    text-decoration: none;
+}

@@ -14,6 +14,8 @@ import vscode from '../../assets/vscode.png'
 import git from '../../assets/git.png'
 import github from '../../assets/github.png'
 import postman from '../../assets/postman.png'
+import python from '../../assets/python.png'
+import pycharm from '../../assets/Pycharm.svg'
 
 export default function Technologies() {
     
@@ -27,6 +29,7 @@ export default function Technologies() {
                 <h2>Tech Stack</h2>
                 <div className='technologies-section'>
                     <Card src={java} name={'Java'} />
+                    <Card src={python} name={'Python'} />
                     <Card src={spring} name={'Spring Boot'} />
                     <Card src={junit5} name={'JUnit5'}/>
                     <Card src={react_js} name={'ReactJS'} />
@@ -39,6 +42,7 @@ export default function Technologies() {
                 <h2>Tools</h2>
                 <div className='technologies-section'>
                     <Card src={intellijIdea} name={'IntelliJ Idea'} />
+                    <Card src={pycharm} name={'PyCharm'} />
                     <Card src={vscode} name={'VS Code'}/>
                     <Card src={git} name={'Git'}/>
                     <Card src={github} name={'GitHub'}/>

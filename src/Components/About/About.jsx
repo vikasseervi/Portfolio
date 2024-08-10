@@ -15,7 +15,7 @@ export default function About() {
             </div>
 
             <div className='about-para'>
-                <p>Hello! I&apos;m a motivated and dedicated college student currently pursuing a B.Tech in Computer Science and Engineering. My proficiency in Java, ReactJs, C++, and Data Structures & Algorithms (DSA) reflects my strong foundation in both programming and problem-solving.</p>
+                <p>Hello! I&apos;m a motivated and dedicated college student currently pursuing a B.Tech in Computer Science and Engineering. My proficiency in Java, ReactJs, Python and Data Structures & Algorithms (DSA) reflects my strong foundation in both programming and problem-solving.</p>
                 <br />
                 <p>I pride myself on my strong observational, organizational, and communication skills, which have been honed through both coursework and self-study. As a quick learner with a robust work ethic, I am always eager to tackle new challenges and expand my knowledge.</p>
                 <br />
