@@ -2,15 +2,17 @@ import './Projects.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import ezManage_project from '../../assets/ezManage_project.gif'
 import portfolio_project from '../../assets/portfolio_project.gif'
+import academymate_project from '../../assets/academymate_project.gif'
 import ezManage_image from '../../assets/ezManageStaticPic.png'
 import portfolio_image from '../../assets/portfolioStaticPic.png'
+import academymate_image from '../../assets/academymatePic.png'
 
 import { useState } from 'react'
 
 export default function Projects() {
 
-    const exManageSkills = ['Java', 'SpringBoot', 'MySQL', 'API', 'HTML', 'CSS', 'Thymeleaf'];
-    const academyMateSkills = ['Java', 'SpringBoot', 'MySQL', 'JPA'];
+    const exManageSkills = ['Java', 'SpringBoot', 'MySQL', 'JPA', 'HTML', 'CSS', 'Thymeleaf'];
+    const academyMateSkills = ['Java', 'SpringBoot', 'MySQL', 'CSS'];
     const portfolioSkills = ['ReactJS', 'HTML', 'CSS'];
 
     const [isHovered, setIsHovered] = useState('');
@@ -61,9 +63,9 @@ export default function Projects() {
                     </div>
                 </div>
                 
-                <div className='project-container'>
-                    <img src="" alt="My GIF" width="auto" height="auto" />
-                    <h2>AcademyMate (CLI)</h2>
+                <div className='project-container' onMouseOver={() => handleMouseOver('academymate')} onMouseOut={handleMouseOut}>
+                    <img src={isHovered === 'academymate' ? academymate_project : academymate_image} alt="My GIF" width="auto" height="auto" />
+                    <h2>AcademyMate </h2>
                     <div className='project-container-techstack'>
                     <p> <h4>Tech Stack :&nbsp;</h4></p>
                     {academyMateSkills.map((skill, index) => (
@@ -73,7 +75,7 @@ export default function Projects() {
                     ))}
                     </div>
                     <div className='project-container-links'>
-                        <a href="https://github.com/vikasseervi/AcademyMate" target="_blank">View code</a>
+                        <a href="https://github.com/vikasseervi/AcademyMate-Project" target="_blank">View code</a>
                     </div>
                 </div>
 
