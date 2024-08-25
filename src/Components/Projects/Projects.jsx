@@ -12,7 +12,7 @@ import { useState } from 'react'
 export default function Projects() {
 
     const exManageSkills = ['Java', 'SpringBoot', 'MySQL', 'JPA', 'HTML', 'CSS', 'Thymeleaf'];
-    const academyMateSkills = ['Java', 'SpringBoot', 'MySQL', 'CSS'];
+    const academyMateSkills = ['Java', 'SpringBoot', 'ReactJS', 'MySQL', 'CSS'];
     const portfolioSkills = ['ReactJS', 'HTML', 'CSS'];
 
     const [isHovered, setIsHovered] = useState('');
