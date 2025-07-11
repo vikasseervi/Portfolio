@@ -27,7 +27,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className >
-                <div className='text-slide-up hero-resume' onClick={() => window.open('https://drive.google.com/file/d/16oFI_zSgBCQycXf16UBgf53s0QcdhC7a/view?usp=drive_link', '_blank')}> My Resume</div>
+                <div className='text-slide-up hero-resume' onClick={() => window.open('https://drive.google.com/file/d/1XE1v7NKSVw9aDSdgJ5pwnBFna3qOdJ1C/view?usp=sharing', '_blank')}> My Resume</div>
                 {/* <div className='text-slide-up hero-resume' onClick={handleDownload}> My Resume</div> */}
             </div>
         </div>
