@@ -7,7 +7,7 @@ import ezManage_image from '../../assets/ezManageStaticPic.png'
 import portfolio_image from '../../assets/portfolioStaticPic.png'
 import academymate_image from '../../assets/academymatePic.png'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Projects() {
 
@@ -19,6 +19,18 @@ export default function Projects() {
 
     const handleMouseOver  = (project) => setIsHovered(project);
     const handleMouseOut = () => setIsHovered('');
+
+    // Preload GIFs so they are ready when hovered
+    useEffect(() => {
+        [ezManage_project, portfolio_project, academymate_project].forEach((src) => {
+            const img = new Image();
+            img.decoding = 'async';
+            img.referrerPolicy = 'no-referrer';
+            img.loading = 'eager';
+            img.src = src;
+        });
+        return undefined;
+    }, []);
    
     return (
         <div id='projects' className='projects'>

@@ -61,12 +61,18 @@
     gap: 20px;
 }
 
-.contact-detail a {
+.contact-detail, /* applies when the row is a div */
+a.contact-detail { /* applies when the row itself is an anchor */
     color: white;
     text-decoration: none;
-    transition: 0.5s;
 }
+
 .contact-detail a:hover {
+    transform: scale(1.05);
+}
+
+/* hover for when the row itself is an anchor (email) */
+a.contact-detail:hover {
     transform: scale(1.05);
 }
 
@@ -81,10 +87,11 @@
     margin-bottom: 100px;
     text-align: center;
 }
-.thank-you spam {
+.thank-you span {
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

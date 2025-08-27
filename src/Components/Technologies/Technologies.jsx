@@ -12,7 +12,7 @@ import mysql from '../../assets/mysql.svg'
 import intellijIdea from '../../assets/intellij-Idea.png'
 import vscode from '../../assets/vscode.png'
 import git from '../../assets/git.png'
-import github from '../../assets/github.png'
+import github_white from '../../assets/github_contact.svg'
 import postman from '../../assets/postman.png'
 import python from '../../assets/python.png'
 import pycharm from '../../assets/Pycharm.svg'
@@ -45,7 +45,7 @@ export default function Technologies() {
                     <Card src={pycharm} name={'PyCharm'} />
                     <Card src={vscode} name={'VS Code'}/>
                     <Card src={git} name={'Git'}/>
-                    <Card src={github} name={'GitHub'}/>
+                    <Card src={github_white} name={'GitHub'}/>
                     <Card src={postman} name={'Postman'}/>
                 </div>
             </div>

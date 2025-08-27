@@ -4,6 +4,7 @@ import About from "./Components/About/About"
 import Technologies from "./Components/Technologies/Technologies"
 import Projects from "./Components/Projects/Projects"
 import Contact from "./Components/Contact/Contact"
+import Timeline from "./Components/Timeline/Timeline"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar /> 
       <Hero />
       <About />
+      <Timeline />
       <Technologies />
       <Projects />
       <Contact />

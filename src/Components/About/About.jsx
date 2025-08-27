@@ -15,11 +15,9 @@ export default function About() {
             </div>
 
             <div className='about-para'>
-                <p>Hello! I&apos;m a motivated and dedicated college student currently pursuing a B.Tech in Computer Science and Engineering. My proficiency in Java, ReactJs, Python and Data Structures & Algorithms (DSA) reflects my strong foundation in both programming and problem-solving.</p>
+                <p>Hello! I&apos;m a motivated and dedicated software engineer with proficiency in Java, ReactJS, Python, and Data Structures & Algorithms (DSA). I have strong problem-solving, organizational, and communication skills, and I enjoy learning quickly and adapting to new challenges.</p>
                 <br />
-                <p>I pride myself on my strong observational, organizational, and communication skills, which have been honed through both coursework and self-study. As a quick learner with a robust work ethic, I am always eager to tackle new challenges and expand my knowledge.</p>
-                <br />
-                <p>My goal is to leverage my technical skills and theoretical knowledge to contribute effectively to a team&apos;s success. I am committed to continuous professional growth and development, and I am enthusiastic about applying my expertise to make a positive impact.</p>
+                <p>My goal is to leverage my technical expertise to contribute effectively to team success while continuing to grow professionally and make a positive impact.</p>
                 <br />
             </div>
 
@@ -29,10 +27,10 @@ export default function About() {
                     <div>
                         <div className='flex-container'>
                             <h4>Bachelor of Technology in Computer Science and Engineering</h4>
-                            <p className='date'>Nov 2021 - present</p>
+                            <p className='date'>Nov 2021 - Apr 2025</p>
                         </div>
                         <li>CMR Engineering College</li>
-                        <li>8.58 CGPA</li>
+                        <li>8.64 CGPA</li>
                         
                     </div>
                     

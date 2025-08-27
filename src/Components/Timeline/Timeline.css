@@ -1,0 +1,197 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.timeline-title {
+    position: relative;
+    height: auto;
+    font-family: outfit;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.timeline-title h1 {
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.timeline-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.timeline-para {
+    font-size: 17px;
+}
+
+.vtl {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 16px;
+  /* Customizable variables */
+  --accent: #6c63ff;        /* purple accent */
+  --node-size: 100px;        /* circle diameter */
+  --node-bg: #000000;       /* circle background */
+  --node-padding: 0px;      /* inner padding for the logo */
+  --col-gap: 28px;          /* gap between left | node | right */
+}
+
+.vtl__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.vtl__header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.vtl__grid {
+  position: relative;
+}
+
+/* center line */
+.vtl__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #8e11b1 10%, #f27cf2 100%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.vtl__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr var(--node-size) 1fr; /* left | node | right */
+  gap: var(--col-gap);
+  align-items: center; /* align left, node, right horizontally */
+  margin: 24px 0;
+  transition: gap 200ms ease;
+}
+
+/* center node */
+.vtl__node {
+  grid-column: 2 / span 1;
+  width: var(--node-size);
+  height: var(--node-size);
+  border-radius: 50%;
+  background: var(--node-bg);
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 2px solid #ffffff; /* white border */
+  padding: var(--node-padding);
+  z-index: 1; /* keep above the center line */
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  box-shadow:
+    0 0 10px rgba(108, 99, 255, 0.5),
+    0 0 20px rgba(108, 99, 255, 0.35),
+    0 0 30px rgba(108, 99, 255, 0.2);
+}
+
+.vtl__node img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* scale to fit within the circle */
+  display: block;
+}
+
+.vtl__node-fallback {
+  font-size: 18px;
+}
+
+.vtl__left, .vtl__right {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid #ffffff; /* white border */
+  padding: 16px;
+  border-radius: 12px;
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  /* box-shadow:
+    0 0 8px rgba(95, 4, 113, 0.25),
+    0 0 16px rgba(205, 43, 205, 0.18),
+    0 0 28px rgba(145, 0, 126, 0.12); */
+}
+
+/* Hover: scale and purple border color */
+.vtl__row:hover .vtl__left,
+.vtl__row:hover .vtl__right {
+  transform: scale(1.06);
+  border-color: #B923E1;
+  /* box-shadow:
+    0 0 10px rgba(185, 35, 225, 0.6),
+    0 0 22px rgba(185, 35, 225, 0.45),
+    0 0 34px rgba(185, 35, 225, 0.3);
+  z-index: 3; */
+}
+.vtl__row:hover .vtl__node {
+  transform: scale(1.06);
+  border-color: #B923E1;
+  box-shadow:
+    0 0 5px rgba(185, 35, 225, 0.6),
+    0 0 10px rgba(185, 35, 225, 0.45),
+    0 0 15px rgba(185, 35, 225, 0.3);
+  z-index: 3;
+}
+
+/* Add a bit more space between columns while hovering to avoid overlap */
+.vtl__row:hover {
+  gap: calc(var(--col-gap) + 12px);
+}
+
+.vtl__field {
+  display: grid;
+  grid-template-columns: 24px 80px 1fr; /* icon | label | value */
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vtl__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vtl__label {
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.vtl__value {
+  font-weight: 500;
+}
+
+.vtl__bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.vtl__bullets li {
+  margin: 6px 0;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .vtl__row {
+    grid-template-columns: 1fr; /* stack */
+  }
+  .vtl__line { display: none; }
+  .vtl__node { display: none; }
+}
